@@ -12,19 +12,20 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity @Data @NoArgsConstructor @AllArgsConstructor @Getter @Setter
-public class Generation {
+
+public class HandlingSystem {
 	  @Id
 	    @GeneratedValue(strategy = GenerationType.IDENTITY)
-	    @Column(name = "Id_generation")
-	    private Integer idGeneration;
+	    @Column(name = "Id_handling_system")
+	    private Integer idHandlingSystem;
 
-	    @Column(name = "generation")
-	    private String generation;
+	    @Column(name = "gearbox_type")
+	    private String gearboxType;
 
-	    @Column(name = "year_from")
-	    private Integer yearFrom;
+	    @Column(name = "drive_wheels")
+	    private String driveWheels;
 
-	    @Column(name = "year_to")
-	    private Integer yearTo;
+	    @Column(name = "number_of_gears")
+	    private Integer numberOfGears;
 
 }

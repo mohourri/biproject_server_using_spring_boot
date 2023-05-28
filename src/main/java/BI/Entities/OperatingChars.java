@@ -12,19 +12,22 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity @Data @NoArgsConstructor @AllArgsConstructor @Getter @Setter
-public class Generation {
-	  @Id
+
+public class OperatingChars {
+	 @Id
 	    @GeneratedValue(strategy = GenerationType.IDENTITY)
-	    @Column(name = "Id_generation")
-	    private Integer idGeneration;
+	    @Column(name = "Id_operating_chars")
+	    private Integer idOperatingChars;
 
-	    @Column(name = "generation")
-	    private String generation;
+	    @Column(name = "cruising_range")
+	    private String cruisingRange;
 
-	    @Column(name = "year_from")
-	    private Integer yearFrom;
+	    @Column(name = "acceleration")
+	    private Float acceleration;
 
-	    @Column(name = "year_to")
-	    private Integer yearTo;
+	    @Column(name = "max_speed")
+	    private Integer maxSpeed;
 
+	    @Column(name = "fuel")
+	    private String fuel;
 }
